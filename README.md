@@ -1,6 +1,6 @@
 # gordex
 
-<!DOCTYPE html>
+<lista-de-filmes-gordex>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
