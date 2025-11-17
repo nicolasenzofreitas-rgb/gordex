@@ -1,184 +1,133 @@
 # gordex
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Filmes Infantis</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Filmes</title>
 
-<style>
-    body {
-        margin: 0;
-        background: linear-gradient(to bottom, #aee2ff, #ffffff);
-        font-family: "Poppins", sans-serif;
-    }
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #111;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
 
-    h1 {
-        text-align: center;
-        padding: 20px;
-        font-size: 35px;
-        color: #003e80;
-        text-shadow: 2px 2px #ffffff;
-    }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #00e5ff;
+        }
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 25px;
-        padding: 20px;
-    }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
 
-    .card {
-        background: #ffffff;
-        border-radius: 15px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        overflow: hidden;
-        transition: transform .3s;
-        position: relative;
-    }
+        .card {
+            background: #1c1c1c;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+            transition: 0.3s;
+        }
 
-    .card:hover {
-        transform: scale(1.07);
-    }
+        .card:hover {
+            transform: scale(1.05);
+        }
 
-    .thumb {
-        width: 100%;
-        height: 350px;
-        object-fit: cover;
-        transition: opacity .4s;
-    }
+        .card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
 
-    .video-preview {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 350px;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity .4s;
-    }
+        .card h2 {
+            padding: 15px;
+            margin: 0;
+            font-size: 1.3em;
+            color: #00e5ff;
+        }
 
-    .card:hover .video-preview {
-        opacity: 1;
-    }
-
-    .info {
-        padding: 15px;
-        text-align: center;
-    }
-
-    .title {
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 10px;
-        color: #003e80;
-    }
-
-    .btn {
-        background-color: #0077ff;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-size: 15px;
-        transition: .3s;
-    }
-
-    .btn:hover {
-        background-color: #005bcc;
-    }
-</style>
+        .card p {
+            padding: 0 15px 20px 15px;
+            margin: 0;
+            opacity: 0.8;
+            font-size: 0.95em;
+        }
+    </style>
 </head>
-
 <body>
 
-<h1>🎬 Filmes Infantis – Clique para Assistir</h1>
+    <h1>Lista de Filmes</h1>
 
-<div class="grid">
+    <div class="grid">
 
-    <!-- FROZEN -->
-    <div class="card">
-        <img class="thumb" src="https://upload.wikimedia.org/wikipedia/pt/1/1b/Frozen_2013.png">
-        <iframe class="video-preview" src="https://www.youtube.com/embed/TbQm5doF_Uc?autoplay=1&mute=1"></iframe>
-        <div class="info">
-            <div class="title">Frozen</div>
-            <a class="btn" href="https://www.youtube.com/watch?v=TbQm5doF_Uc" target="_blank">Assistir</a>
+        <div class="card">
+            <img src="IMAGEM-GERAR-BLADE-RUNNER" alt="Blade Runner">
+            <h2>Blade Runner (1982)</h2>
+            <p>Ficção científica futurista em uma distopia cyberpunk.</p>
         </div>
-    </div>
 
-    <!-- TOY STORY -->
-    <div class="card">
-        <img class="thumb" src="https://upload.wikimedia.org/wikipedia/pt/d/dc/Toy_Story_p%C3%B4ster.png">
-        <iframe class="video-preview" src="https://www.youtube.com/embed/KuWdUimLRK0?autoplay=1&mute=1"></iframe>
-        <div class="info">
-            <div class="title">Toy Story</div>
-            <a class="btn" href="https://www.youtube.com/watch?v=KuWdUimLRK0" target="_blank">Assistir</a>
+        <div class="card">
+            <img src="IMAGEM-GERAR-JURASSIC-PARK" alt="Jurassic Park">
+            <h2>Jurassic Park (1993)</h2>
+            <p>Clássico sobre o parque de dinossauros recriados geneticamente.</p>
         </div>
-    </div>
 
-    <!-- MOANA -->
-    <div class="card">
-        <img class="thumb" src="https://upload.wikimedia.org/wikipedia/pt/5/5a/Moana.jpg">
-        <iframe class="video-preview" src="https://www.youtube.com/embed/LKFuXETZUsI?autoplay=1&mute=1"></iframe>
-        <div class="info">
-            <div class="title">Moana</div>
-            <a class="btn" href="https://www.youtube.com/watch?v=LKFuXETZUsI" target="_blank">Assistir</a>
+        <div class="card">
+            <img src="IMAGEM-GERAR-RATATOUILLE" alt="Ratatouille">
+            <h2>Ratatouille (2007)</h2>
+            <p>Um rato com o sonho de ser chef em Paris.</p>
         </div>
-    </div>
 
-    <!-- DIVERTIDA MENTE -->
-    <div class="card">
-        <img class="thumb" src="https://upload.wikimedia.org/wikipedia/pt/9/9b/Divertida_Mente_2015.jpg">
-        <iframe class="video-preview" src="https://www.youtube.com/embed/seMwpP0yeu4?autoplay=1&mute=1"></iframe>
-        <div class="info">
-            <div class="title">Divertida Mente</div>
-            <a class="btn" href="https://www.youtube.com/watch?v=seMwpP0yeu4" target="_blank">Assistir</a>
+        <div class="card">
+            <img src="IMAGEM-GERAR-ARRIVAL" alt="Arrival">
+            <h2>Arrival (2016)</h2>
+            <p>Contato com alienígenas e desafios de comunicação.</p>
         </div>
-    </div>
 
-    <!-- CARROS -->
-    <div class="card">
-        <img class="thumb" src="https://upload.wikimedia.org/wikipedia/pt/3/34/Cars_2006.jpg">
-        <iframe class="video-preview" src="https://www.youtube.com/embed/SbXIj2T-_uk?autoplay=1&mute=1"></iframe>
-        <div class="info">
-            <div class="title">Carros</div>
-            <a class="btn" href="https://www.youtube.com/watch?v=SbXIj2T-_uk" target="_blank">Assistir</a>
+        <div class="card">
+            <img src="IMAGEM-GERAR-SPIRITED-AWAY" alt="Spirited Away">
+            <h2>A Viagem de Chihiro (2001)</h2>
+            <p>Aventura mágica do Studio Ghibli.</p>
         </div>
-    </div>
 
-    <!-- ENCANTO -->
-    <div class="card">
-        <img class="thumb" src="https://upload.wikimedia.org/wikipedia/pt/8/88/Encanto_poster.jpg">
-        <iframe class="video-preview" src="https://www.youtube.com/embed/CaimKeDcudo?autoplay=1&mute=1"></iframe>
-        <div class="info">
-            <div class="title">Encanto</div>
-            <a class="btn" href="https://www.youtube.com/watch?v=CaimKeDcudo" target="_blank">Assistir</a>
+        <div class="card">
+            <img src="IMAGEM-GERAR-WWDIS" alt="What We Do in the Shadows">
+            <h2>What We Do in the Shadows (2014)</h2>
+            <p>Mockumentary cômico sobre vampiros dividindo apartamento.</p>
         </div>
-    </div>
 
-    <!-- PEQUENA SEREIA -->
-    <div class="card">
-        <img class="thumb" src="https://upload.wikimedia.org/wikipedia/pt/7/75/The_Little_Mermaid_1989.jpg">
-        <iframe class="video-preview" src="https://www.youtube.com/embed/ZGZX5-PAwR8?autoplay=1&mute=1"></iframe>
-        <div class="info">
-            <div class="title">A Pequena Sereia</div>
-            <a class="btn" href="https://www.youtube.com/watch?v=ZGZX5-PAwR8" target="_blank">Assistir</a>
+        <div class="card">
+            <img src="IMAGEM-GERAR-DARK-KNIGHT" alt="The Dark Knight">
+            <h2>The Dark Knight (2008)</h2>
+            <p>Batman enfrenta o Coringa em um dos melhores filmes de heróis.</p>
         </div>
-    </div>
 
-    <!-- O REI LEÃO -->
-    <div class="card">
-        <img class="thumb" src="https://upload.wikimedia.org/wikipedia/pt/3/3d/The_Lion_King.png">
-        <iframe class="video-preview" src="https://www.youtube.com/embed/lFzVJEksoDY?autoplay=1&mute=1"></iframe>
-        <div class="info">
-            <div class="title">O Rei Leão</div>
-            <a class="btn" href="https://www.youtube.com/watch?v=lFzVJEksoDY" target="_blank">Assistir</a>
+        <div class="card">
+            <img src="IMAGEM-GERAR-CORALINE" alt="Coraline">
+            <h2>Coraline (2009)</h2>
+            <p>Uma menina encontra um mundo paralelo aparentemente perfeito.</p>
         </div>
-    </div>
 
-</div>
+        <div class="card">
+            <img src="IMAGEM-GERAR-INCEPTION" alt="Inception">
+            <h2>Inception (2010)</h2>
+            <p>Assalto dentro dos sonhos com camadas de realidade.</p>
+        </div>
+
+        <div class="card">
+            <img src="IMAGEM-GERAR-REVENANT" alt="The Revenant">
+            <h2>The Revenant (2015)</h2>
+            <p>Um homem luta pela sobrevivência na neve após ser traído.</p>
+        </div>
+
+    </div>
 
 </body>
 </html>
